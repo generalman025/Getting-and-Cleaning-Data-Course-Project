@@ -1,4 +1,3 @@
-library(tidyverse)
 
 ##############################################
 ## *** MUST SET ROOT FOLDER FOR DATASET *** ##
@@ -8,6 +7,8 @@ root.folder <- './UCI HAR Dataset'
 ##############################################################################################################
 ## Merge, Label variable and Extract only mean and standard deviation for each measurement for 'X' variable ##
 ##############################################################################################################
+library(tidyverse)
+
 X.train <- read.table(paste0(root.folder, '/train/X_train.txt'))
 X.test <- read.table(paste0(root.folder, '/test/X_test.txt'))
 X <- rbind(X.train, X.test)
