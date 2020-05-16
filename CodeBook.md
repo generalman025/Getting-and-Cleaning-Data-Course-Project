@@ -17,8 +17,7 @@ This dataset is originally from 'Human Activity Recognition Using Smartphones Da
 - rename '-Y' to 'YAxis'
 - rename '-Z' to 'ZAxis'
 
-Variable List
-===================================================================================================
+Variable List:
 
 1. Subject
 2. ActivityLabel
