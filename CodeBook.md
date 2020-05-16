@@ -20,8 +20,8 @@ This dataset is originally from "Human Activity Recognition Using Smartphones Da
 Variable List
 ===================================================================================================
 
-"1" "Subject"
-"2" "ActivityLabel"
+- Subject"
+- ActivityLabel"
 "3" "AverageTimeBodyAccelerometerXAxis"
 "4" "AverageTimeBodyAccelerometerYAxis"
 "5" "AverageTimeBodyAccelerometerZAxis"
