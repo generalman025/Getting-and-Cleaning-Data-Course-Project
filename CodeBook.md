@@ -1,4 +1,4 @@
-Section : Code Book
+Code Book
 
 1 "Subject" : indicates owner of record
 2 "ActivityLabel" : indicates the activity name for record
