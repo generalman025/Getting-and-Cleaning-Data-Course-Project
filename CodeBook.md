@@ -11,18 +11,12 @@ Section : Code Book
 9 "TimeGravityAccelerometerMeanXAxis" : indicates the average time domain signal of Gravity Accelerometer on X Axis (captured at a constant rate of 50 Hz)
 10 "TimeGravityAccelerometerMeanYAxis" : indicates the average time domain signal of Gravity Accelerometer on Y Axis (captured at a constant rate of 50 Hz)
 11 "TimeGravityAccelerometerMeanZAxis" : indicates the average time domain signal of Gravity Accelerometer on Z Axis (captured at a constant rate of 50 Hz)
-12 "TimeGravityAccelerometerStandardDeviationXAxis" : indicates the standard deviation of time domain signal of Gravity Accelerometer on X Axis (captured at a constant rate of 50 Hz) 
-
-13 "TimeGravityAccelerometerStandardDeviationYAxis" : indicates the standard deviation of time domain signal of Gravity Accelerometer on Y Axis (captured at a constant rate of 50 Hz) 
-
-14 "TimeGravityAccelerometerStandardDeviationZAxis" : indicates the standard deviation of time domain signal of Gravity Accelerometer on Z Axis (captured at a constant rate of 50 Hz) 
-
-15 "TimeBodyAccelerometerJerkMeanXAxis" : indicates the average time domain for Jerk signal of Body Accelerometer on X Axis (captured at a constant rate of 50 Hz) 
-
-16 "TimeBodyAccelerometerJerkMeanYAxis" : indicates the average time domain for Jerk signal of Body Accelerometer on Y Axis (captured at a constant rate of 50 Hz) 
-
-17 "TimeBodyAccelerometerJerkMeanZAxis" : indicates the average time domain for Jerk signal of Body Accelerometer on Z Axis (captured at a constant rate of 50 Hz) 
-
+12 "TimeGravityAccelerometerStandardDeviationXAxis" : indicates the standard deviation of time domain signal of Gravity Accelerometer on X Axis (captured at a constant rate of 50 Hz)
+13 "TimeGravityAccelerometerStandardDeviationYAxis" : indicates the standard deviation of time domain signal of Gravity Accelerometer on Y Axis (captured at a constant rate of 50 Hz)
+14 "TimeGravityAccelerometerStandardDeviationZAxis" : indicates the standard deviation of time domain signal of Gravity Accelerometer on Z Axis (captured at a constant rate of 50 Hz)
+15 "TimeBodyAccelerometerJerkMeanXAxis" : indicates the average time domain for Jerk signal of Body Accelerometer on X Axis (captured at a constant rate of 50 Hz)
+16 "TimeBodyAccelerometerJerkMeanYAxis" : indicates the average time domain for Jerk signal of Body Accelerometer on Y Axis (captured at a constant rate of 50 Hz)
+17 "TimeBodyAccelerometerJerkMeanZAxis" : indicates the average time domain for Jerk signal of Body Accelerometer on Z Axis (captured at a constant rate of 50 Hz)
 18 "TimeBodyAccelerometerJerkStandardDeviationXAxis"
 19 "TimeBodyAccelerometerJerkStandardDeviationYAxis"
 20 "TimeBodyAccelerometerJerkStandardDeviationZAxis"
