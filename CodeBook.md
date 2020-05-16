@@ -1,10 +1,10 @@
 Section : Code Book
 
-1 "Subject" : indicates owner of record.
-2 "ActivityLabel" : indicates the activity name for record.
-3 "TimeBodyAccelerometerMeanXAxis" : indicates the average time domain signal of Body Accelerometer on X-axis (captured at a constant rate of 50 Hz).
-4 "TimeBodyAccelerometerMeanYAxis" : indicates the average time domain signal of Body Accelerometer on Y-axis (captured at a constant rate of 50 Hz).
-5 "TimeBodyAccelerometerMeanZAxis" : indicates the average time domain signal of Body Accelerometer on Z-axis (captured at a constant rate of 50 Hz).
+1 "Subject" : indicates owner of record
+2 "ActivityLabel" : indicates the activity name for record
+3 "TimeBodyAccelerometerMeanXAxis" : indicates the average time domain signal of Body Accelerometer on X-axis (captured at a constant rate of 50 Hz)
+4 "TimeBodyAccelerometerMeanYAxis" : indicates the average time domain signal of Body Accelerometer on Y-axis (captured at a constant rate of 50 Hz)
+5 "TimeBodyAccelerometerMeanZAxis" : indicates the average time domain signal of Body Accelerometer on Z-axis (captured at a constant rate of 50 Hz)
 6 "TimeBodyAccelerometerStandardDeviationXAxis" : indicates the standard deviation of time domain signal of Body Accelerometer on X-axis (captured at a constant rate of 50 Hz)
 7 "TimeBodyAccelerometerStandardDeviationYAxis" : indicates the standard deviation of time domain signal of Body Accelerometer on Y-axis (captured at a constant rate of 50 Hz)
 8 "TimeBodyAccelerometerStandardDeviationZAxis" : indicates the standard deviation of time domain signal of Body Accelerometer on Z-axis (captured at a constant rate of 50 Hz)

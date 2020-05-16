@@ -48,6 +48,9 @@ subject.test <- read.table(paste0(root.folder, '/test/subject_test.txt'))
 subject <- rbind(subject.train, subject.test)
 names(subject) <- c('Subject')
 
+########################
+## Merge all variable ##
+########################
 tidy_data <- cbind(subject, y, X)
 
 ## Remove unused variable
