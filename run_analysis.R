@@ -16,17 +16,22 @@ X <- rbind(X.train, X.test)
 feature <- read.table(paste0(root.folder, '/features.txt'))
 select.loc <- grep('mean\\(\\)|std\\(\\)', feature$V2)
 X <- subset(X, select = select.loc)
-names(X) <- feature[select.loc, 'V2']
-names(X) <- gsub('^f', 'Frequency', names(X))
-names(X) <- gsub('^t', 'Time', names(X))
-names(X) <- gsub('Acc', 'Accelerometer', names(X))
-names(X) <- gsub('Gyro', 'Gyroscope', names(X))
-names(X) <- gsub('Mag', 'Magnitude', names(X))
-names(X) <- gsub('-mean\\(\\)', 'Mean', names(X))
-names(X) <- gsub('-std\\(\\)', 'StandardDeviation', names(X))
-names(X) <- gsub('-X', 'XAxis', names(X))
-names(X) <- gsub('-Y', 'YAxis', names(X))
-names(X) <- gsub('-Z', 'ZAxis', names(X))
+name.feature <- feature[select.loc, 'V2']
+name.feature <- gsub('^f', 'Frequency', name.feature)
+name.feature <- gsub('^t', 'Time', name.feature)
+name.feature <- gsub('Acc', 'Accelerometer', name.feature)
+name.feature <- gsub('Gyro', 'Gyroscope', name.feature)
+name.feature <- gsub('Mag', 'Magnitude', name.feature)
+name.feature <- gsub('-X', 'XAxis', name.feature)
+name.feature <- gsub('-Y', 'YAxis', name.feature)
+name.feature <- gsub('-Z', 'ZAxis', name.feature)
+
+select.mean.loc <- grep('-mean\\(\\)', name.feature)
+select.std.loc <- grep('-std\\(\\)', name.feature)
+name.feature[select.mean.loc] <- paste0('Average' ,name.feature[select.mean.loc])
+name.feature[select.std.loc] <- paste0('StandardDeviation' ,name.feature[select.std.loc])
+name.feature <- gsub('-mean\\(\\)|-std\\(\\)', '', name.feature)
+names(X) <- name.feature
 
 ###############################################################
 ## Merge, Label variable and Transform data for 'y' variable ##
@@ -54,10 +59,9 @@ names(subject) <- c('Subject')
 tidy_data <- cbind(subject, y, X)
 
 ## Remove unused variable
-rm(X.train, X.test, X, feature, select.loc, y.train, y.test, y, activity.label, subject.train, subject.test, subject)
+rm(root.folder, X.train, X.test, X, feature, name.feature, select.loc, select.std.loc, select.mean.loc, y.train, y.test, y, activity.label, subject.train, subject.test, subject)
 
-## Export 
-#export_data <- aggregate(select(tidy_data, -c(Subject, ActivityLabel)), by=list(Subject=tidy_data$Subject, ActivityLabel=tidy_data$ActivityLabel), FUN = mean)
-#names(export_data)[3:68] <- paste0('Average', names(export_data)[3:68])
-#export_data <- arrange(export_data, Subject, ActivityLabel)
-#write.table(export_data, file='export_summarized_dataset.txt', row.name=FALSE)
+## Export
+export_data <- aggregate(select(tidy_data, -c(Subject, ActivityLabel)), by=list(Subject=tidy_data$Subject, ActivityLabel=tidy_data$ActivityLabel), FUN = mean)
+export_data <- arrange(export_data, Subject, ActivityLabel)
+write.table(export_data, file='export_average_dataset.txt', row.name=FALSE)
