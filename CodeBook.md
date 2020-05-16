@@ -2,7 +2,6 @@ Code Book
 ===================================================================================================
 
 This dataset is originally from 'Human Activity Recognition Using Smartphones Data Set' (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). The proposed dataset was merged from train and test data file ('X_train.txt', 'X_test.txt', 'subject_train.txt', 'y_train.txt', 'y_test.txt', 'subject_test.txt') and get only a Mean and Standard Deviation of the original variable. the description of variable as the following:
-
 1. Subject is a volunteer number
 2. ActivityLabel describe activity names
 3. The 3rd - 68th variable are the Mean and Standard Deviation of the original variable and transform its name as the following:
@@ -17,8 +16,14 @@ This dataset is originally from 'Human Activity Recognition Using Smartphones Da
 - rename '-Y' to 'YAxis'
 - rename '-Z' to 'ZAxis'
 
-Variable List:
+Notes: 
+======
+- Variables (3) are normalized and bounded within [-1,1].
+- The units used for the accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/seg2).
+- The gyroscope units are rad/seg.
 
+Variable List:
+==============
 1. Subject
 2. ActivityLabel
 3. AverageTimeBodyAccelerometerXAxis
