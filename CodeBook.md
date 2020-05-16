@@ -1,6 +1,4 @@
----
-output: word_document
----
+
 Code Book
 
 1 "Subject" : indicates owner of record
