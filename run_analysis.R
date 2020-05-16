@@ -62,6 +62,6 @@ tidy_data <- cbind(subject, y, X)
 rm(root.folder, X.train, X.test, X, feature, name.feature, select.loc, select.std.loc, select.mean.loc, y.train, y.test, y, activity.label, subject.train, subject.test, subject)
 
 ## Export
-export_data <- aggregate(select(tidy_data, -c(Subject, ActivityLabel)), by=list(Subject=tidy_data$Subject, ActivityLabel=tidy_data$ActivityLabel), FUN = mean)
-export_data <- arrange(export_data, Subject, ActivityLabel)
-write.table(export_data, file='export_average_dataset.txt', row.name=FALSE)
+#export_data <- aggregate(select(tidy_data, -c(Subject, ActivityLabel)), by=list(Subject=tidy_data$Subject, ActivityLabel=tidy_data$ActivityLabel), FUN = mean)
+#export_data <- arrange(export_data, Subject, ActivityLabel)
+#write.table(export_data, file='export_average_dataset.txt', row.name=FALSE)
